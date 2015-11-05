@@ -1,0 +1,9 @@
+{
+  "name": "BowerVS2015",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "kendo-ui": "https://bower.telerik.com/bower-kendo-ui.git"
+  }
+}

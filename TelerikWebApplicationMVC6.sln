@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{630EB444-5B26-4A14-B7B1-23D8BB36AD6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE553F64-298B-4A91-933B-185B3EE53CC6}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TelerikWebApplicationMVC6", "src\TelerikWebApplicationMVC6\TelerikWebApplicationMVC6.xproj", "{063F1E76-98E4-4621-AE85-6FC9AE3E202C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{268F80A9-8252-4425-B7D0-AF6F7F6BD7DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{77891418-30D6-474B-BB46-AD67EF5517EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{063F1E76-98E4-4621-AE85-6FC9AE3E202C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063F1E76-98E4-4621-AE85-6FC9AE3E202C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063F1E76-98E4-4621-AE85-6FC9AE3E202C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063F1E76-98E4-4621-AE85-6FC9AE3E202C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{063F1E76-98E4-4621-AE85-6FC9AE3E202C} = {630EB444-5B26-4A14-B7B1-23D8BB36AD6E}
+		{268F80A9-8252-4425-B7D0-AF6F7F6BD7DD} = {FE553F64-298B-4A91-933B-185B3EE53CC6}
+		{77891418-30D6-474B-BB46-AD67EF5517EA} = {630EB444-5B26-4A14-B7B1-23D8BB36AD6E}
+	EndGlobalSection
+EndGlobal
