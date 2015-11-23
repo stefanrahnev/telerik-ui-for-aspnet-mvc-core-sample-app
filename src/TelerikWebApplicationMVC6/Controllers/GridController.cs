@@ -13,7 +13,7 @@ namespace TelerikWebApplicationMVC6.Controllers
 {
     public partial class GridController : Controller
     {
-        public ActionResult Orders_Read([DataSourceRequest]DataSourceRequest request)
+        public ActionResult Orders_Read([DataSourceRequest] DataSourceRequest request)
         {
             var result = Enumerable.Range(0, 50).Select(i => new OrderViewModel
             {
