@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Mvc;
 using Kendo.Mvc.UI;
 using TelerikWebApplicationMVC6.Models;
 using Kendo.Mvc.Extensions;
-
-// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+using Microsoft.AspNetCore.Mvc;
 
 namespace TelerikWebApplicationMVC6.Controllers
 {

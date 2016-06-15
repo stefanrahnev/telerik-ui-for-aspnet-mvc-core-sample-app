@@ -9,7 +9,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="~/kendo-ui/styles/kendo.common-material.min.css" />
-    <link rel="stylesheet" href="~/kendo-ui/styles/kendo.rtl.css" />
+    <link rel="stylesheet" href="~/kendo-ui/styles/kendo.rtl.min.css" />
     <link rel="stylesheet" href="~/kendo-ui/styles/kendo.material.min.css" />
 
     <script src="~/kendo-ui/js/jquery.min.js"></script>
@@ -21,37 +21,37 @@
     <div>
         <h1>Telerik UI for ASP.NET MVC 6 Demo Page</h1>
         @(Html.Kendo().ToolBar()
-                  .Name("Toolbar")
-    .Items(items =>
-    {
-        items.Add().Type(CommandType.Button).Text("Button");
-        items.Add().Type(CommandType.Button).Text("Toggle Button").Togglable(true);
-        items.Add().Type(CommandType.SplitButton).Text("Insert").MenuButtons(menuButtons =>
-        {
-            menuButtons.Add().Text("Insert above").Icon("insert-n");
-            menuButtons.Add().Text("Insert between").Icon("insert-m");
-            menuButtons.Add().Text("Insert below").Icon("insert-s");
-        });
-        items.Add().Type(CommandType.Separator);
-        items.Add().Template("<label>Format:</label>");
-        items.Add().Template("<input id='dropdown' style='width: 150px;' />").Overflow(ShowInOverflowPopup.Never);
-        items.Add().Type(CommandType.Separator);
-        items.Add().Type(CommandType.ButtonGroup).Buttons(buttons =>
-        {
-            buttons.Add().Text("Left").Togglable(true).Group("text-align").SpriteCssClass("k-tool-icon k-justifyLeft");
-            buttons.Add().Text("Center").Togglable(true).Group("text-align").SpriteCssClass("k-tool-icon k-justifyCenter");
-            buttons.Add().Text("Right").Togglable(true).Group("text-align").SpriteCssClass("k-tool-icon k-justifyRight");
-        });
-        items.Add().Type(CommandType.ButtonGroup).Buttons(buttons =>
-        {
-            buttons.Add().Text("Bold").Togglable(true).SpriteCssClass("k-tool-icon k-bold").ShowText(ShowIn.Overflow);
-            buttons.Add().Text("Italic").Togglable(true).SpriteCssClass("k-tool-icon k-italic").ShowText(ShowIn.Overflow);
-            buttons.Add().Text("Underline").Togglable(true).SpriteCssClass("k-tool-icon k-underline").ShowText(ShowIn.Overflow);
-        });
-        items.Add().Type(CommandType.Button).Text("Action").Overflow(ShowInOverflowPopup.Always);
-        items.Add().Type(CommandType.Button).Text("Another Action").Overflow(ShowInOverflowPopup.Always);
-        items.Add().Type(CommandType.Button).Text("Something else here").Overflow(ShowInOverflowPopup.Always);
-    })
+            .Name("Toolbar")
+            .Items(items =>
+            {
+                items.Add().Type(CommandType.Button).Text("Button");
+                items.Add().Type(CommandType.Button).Text("Toggle Button").Togglable(true);
+                items.Add().Type(CommandType.SplitButton).Text("Insert").MenuButtons(menuButtons =>
+                {
+                    menuButtons.Add().Text("Insert above").Icon("insert-n");
+                    menuButtons.Add().Text("Insert between").Icon("insert-m");
+                    menuButtons.Add().Text("Insert below").Icon("insert-s");
+                });
+                items.Add().Type(CommandType.Separator);
+                items.Add().Template("<label>Format:</label>");
+                items.Add().Template("<input id='dropdown' style='width: 150px;' />").Overflow(ShowInOverflowPopup.Never);
+                items.Add().Type(CommandType.Separator);
+                items.Add().Type(CommandType.ButtonGroup).Buttons(buttons =>
+                {
+                    buttons.Add().Text("Left").Togglable(true).Group("text-align").SpriteCssClass("k-tool-icon k-justifyLeft");
+                    buttons.Add().Text("Center").Togglable(true).Group("text-align").SpriteCssClass("k-tool-icon k-justifyCenter");
+                    buttons.Add().Text("Right").Togglable(true).Group("text-align").SpriteCssClass("k-tool-icon k-justifyRight");
+                });
+                items.Add().Type(CommandType.ButtonGroup).Buttons(buttons =>
+                {
+                    buttons.Add().Text("Bold").Togglable(true).SpriteCssClass("k-tool-icon k-bold").ShowText(ShowIn.Overflow);
+                    buttons.Add().Text("Italic").Togglable(true).SpriteCssClass("k-tool-icon k-italic").ShowText(ShowIn.Overflow);
+                    buttons.Add().Text("Underline").Togglable(true).SpriteCssClass("k-tool-icon k-underline").ShowText(ShowIn.Overflow);
+                });
+                items.Add().Type(CommandType.Button).Text("Action").Overflow(ShowInOverflowPopup.Always);
+                items.Add().Type(CommandType.Button).Text("Another Action").Overflow(ShowInOverflowPopup.Always);
+                items.Add().Type(CommandType.Button).Text("Something else here").Overflow(ShowInOverflowPopup.Always);
+            })
         )
     </div>
 </div>
@@ -113,28 +113,28 @@
     <div>
         <div>
             @(Html.Kendo().Grid<TelerikWebApplicationMVC6.Models.OrderViewModel>()
-        .Name("grid")
-        .Columns(columns =>
-        {
-            columns.Bound(p => p.OrderID).Filterable(false);
-            columns.Bound(p => p.Freight);
-            columns.Bound(p => p.OrderDate).Format("{0:MM/dd/yyyy}");
-            columns.Bound(p => p.ShipName);
-            columns.Bound(p => p.ShipCity);
-        })
-        .Pageable()
-        .Sortable()
-        .Scrollable()
-        .Filterable()
-        .HtmlAttributes(new { style = "height:550px;" })
-        .DataSource(dataSource => dataSource
-        .Ajax()
-        .PageSize(20)
-        .Read(read => read.Action("Orders_Read", "Grid"))
-        )
+                .Name("grid")
+                .Columns(columns =>
+                {
+                    columns.Bound(p => p.OrderID).Filterable(false);
+                    columns.Bound(p => p.Freight);
+                    columns.Bound(p => p.OrderDate).Format("{0:MM/dd/yyyy}");
+                    columns.Bound(p => p.ShipName);
+                    columns.Bound(p => p.ShipCity);
+                })
+                .Pageable()
+                .Sortable()
+                .Scrollable()
+                .Filterable()
+                .HtmlAttributes(new { style = "height:550px;" })
+                .DataSource(dataSource => dataSource
+                .Ajax()
+                .PageSize(20)
+                .Read(read => read.Action("Orders_Read", "Grid"))
+                )
             )
         </div>
     </div>
 </div>
-    </body>
+</body>
 </html>
