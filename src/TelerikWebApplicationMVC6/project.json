@@ -28,7 +28,7 @@
         "version": "1.0.0-preview1-final",
         "type": "build"
     },
-    "Kendo.Mvc": "2016.2.607"
+    "Kendo.Mvc": "2016.2.617"
   },
 
   "tools": {

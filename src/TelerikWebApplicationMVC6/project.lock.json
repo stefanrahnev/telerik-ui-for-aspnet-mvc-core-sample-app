@@ -12,7 +12,7 @@
           "lib/portable-windows8+net45+wp8/System.Interactive.Async.dll": {}
         }
       },
-      "Kendo.Mvc/2016.2.607": {
+      "Kendo.Mvc/2016.2.616": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc": "1.0.0-rc2-final",
@@ -20,8 +20,6 @@
           "Microsoft.AspNetCore.Mvc.Formatters.Xml": "1.0.0-rc2-final",
           "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0-rc2-final",
           "Microsoft.AspNetCore.Routing": "1.0.0-rc2-final",
-          "Microsoft.Dnx.Compilation.CSharp.Abstractions": "1.0.0-rc2-20221",
-          "Microsoft.Extensions.CompilationAbstractions": "1.0.0-rc2-20221",
           "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-final",
           "System.Data.Common": "4.0.1-rc2-24027",
           "System.Diagnostics.TraceSource": "4.0.0-rc2-24027",
@@ -958,20 +956,6 @@
           "lib/netstandard1.3/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Dnx.Compilation.CSharp.Abstractions/1.0.0-rc2-20221": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "1.1.0-rc1-20151109-01",
-          "Microsoft.Extensions.CompilationAbstractions": "1.0.0-rc2-20221",
-          "Microsoft.NETCore.Platforms": "1.0.1-rc2-23826"
-        },
-        "compile": {
-          "lib/dotnet5.4/Microsoft.Dnx.Compilation.CSharp.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/Microsoft.Dnx.Compilation.CSharp.Abstractions.dll": {}
-        }
-      },
       "Microsoft.DotNet.Cli.Utils/1.0.0-preview1-002702": {
         "type": "package",
         "dependencies": {
@@ -1128,22 +1112,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.Extensions.CommandLineUtils.dll": {}
-        }
-      },
-      "Microsoft.Extensions.CompilationAbstractions/1.0.0-rc2-20221": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-20251",
-          "Microsoft.Extensions.PlatformAbstractions.Dnx": "1.0.0-rc2-20221",
-          "System.IO.FileSystem": "4.0.1-rc2-23826",
-          "System.Resources.ResourceManager": "4.0.1-rc2-23826",
-          "System.Runtime.Extensions": "4.1.0-rc2-23826"
-        },
-        "compile": {
-          "lib/dotnet5.4/Microsoft.Extensions.CompilationAbstractions.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/Microsoft.Extensions.CompilationAbstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/1.0.0-rc2-final": {
@@ -1508,28 +1476,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
-        }
-      },
-      "Microsoft.Extensions.PlatformAbstractions.Dnx/1.0.0-rc2-20221": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1-rc2-23826",
-          "System.AppContext": "4.1.0-rc2-23826",
-          "System.IO.FileSystem": "4.0.1-rc2-23826",
-          "System.Linq": "4.1.0-rc2-23826",
-          "System.Reflection": "4.1.0-rc2-23826",
-          "System.Reflection.Extensions": "4.0.1-rc2-23826",
-          "System.Reflection.TypeExtensions": "4.1.0-rc2-23826",
-          "System.Resources.ResourceManager": "4.0.1-rc2-23826",
-          "System.Runtime.InteropServices": "4.1.0-rc2-23826",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0-rc2-23826",
-          "System.Threading.Tasks": "4.0.11-rc2-23826"
-        },
-        "compile": {
-          "lib/dotnet5.4/Microsoft.Extensions.PlatformAbstractions.Dnx.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/Microsoft.Extensions.PlatformAbstractions.Dnx.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/1.0.0-rc2-final": {
@@ -4158,31 +4104,31 @@
         "lib/portable-windows8+net45+wp8/System.Interactive.Async.dll"
       ]
     },
-    "Kendo.Mvc/2016.2.607": {
-      "sha512": "45WsntI3tHCUh4MuUC0tiCWpCoSAy4F9MlMhkLQj4UH6OuFBe0iK/7DAtsRW3O7wXGXd1Wqxa0y4uK+EC7+RwA==",
+    "Kendo.Mvc/2016.2.616": {
+      "sha512": "GTMSQaW/erPmIG7C4Nhe+TWJlvHbfpwGKF8mmP0UIBw3FoW79dOGuboaYqmFWo/mlTlGCgOs+qvBLLtKNsCO5g==",
       "type": "package",
       "files": [
-        "Kendo.Mvc.2016.2.607.nupkg.sha512",
+        "Kendo.Mvc.2016.2.616.nupkg.sha512",
         "Kendo.Mvc.nuspec",
-        "lib/net452/Kendo.Mvc.dll",
-        "lib/net452/bg-BG/Kendo.Mvc.resources.dll",
-        "lib/net452/cs-CZ/Kendo.Mvc.resources.dll",
-        "lib/net452/da-DK/Kendo.Mvc.resources.dll",
-        "lib/net452/de-DE/Kendo.Mvc.resources.dll",
-        "lib/net452/es-ES/Kendo.Mvc.resources.dll",
-        "lib/net452/fr-CA/Kendo.Mvc.resources.dll",
-        "lib/net452/fr-FR/Kendo.Mvc.resources.dll",
-        "lib/net452/it-IT/Kendo.Mvc.resources.dll",
-        "lib/net452/nl-NL/Kendo.Mvc.resources.dll",
-        "lib/net452/pl-PL/Kendo.Mvc.resources.dll",
-        "lib/net452/pt-BR/Kendo.Mvc.resources.dll",
-        "lib/net452/pt-PT/Kendo.Mvc.resources.dll",
-        "lib/net452/ro-RO/Kendo.Mvc.resources.dll",
-        "lib/net452/ru-RU/Kendo.Mvc.resources.dll",
-        "lib/net452/sv-SE/Kendo.Mvc.resources.dll",
-        "lib/net452/tr-TR/Kendo.Mvc.resources.dll",
-        "lib/net452/uk-UA/Kendo.Mvc.resources.dll",
-        "lib/net452/zh-CN/Kendo.Mvc.resources.dll",
+        "lib/net451/Kendo.Mvc.dll",
+        "lib/net451/bg-BG/Kendo.Mvc.resources.dll",
+        "lib/net451/cs-CZ/Kendo.Mvc.resources.dll",
+        "lib/net451/da-DK/Kendo.Mvc.resources.dll",
+        "lib/net451/de-DE/Kendo.Mvc.resources.dll",
+        "lib/net451/es-ES/Kendo.Mvc.resources.dll",
+        "lib/net451/fr-CA/Kendo.Mvc.resources.dll",
+        "lib/net451/fr-FR/Kendo.Mvc.resources.dll",
+        "lib/net451/it-IT/Kendo.Mvc.resources.dll",
+        "lib/net451/nl-NL/Kendo.Mvc.resources.dll",
+        "lib/net451/pl-PL/Kendo.Mvc.resources.dll",
+        "lib/net451/pt-BR/Kendo.Mvc.resources.dll",
+        "lib/net451/pt-PT/Kendo.Mvc.resources.dll",
+        "lib/net451/ro-RO/Kendo.Mvc.resources.dll",
+        "lib/net451/ru-RU/Kendo.Mvc.resources.dll",
+        "lib/net451/sv-SE/Kendo.Mvc.resources.dll",
+        "lib/net451/tr-TR/Kendo.Mvc.resources.dll",
+        "lib/net451/uk-UA/Kendo.Mvc.resources.dll",
+        "lib/net451/zh-CN/Kendo.Mvc.resources.dll",
         "lib/netcoreapp1.0/Kendo.Mvc.dll",
         "lib/netcoreapp1.0/bg-BG/Kendo.Mvc.resources.dll",
         "lib/netcoreapp1.0/cs-CZ/Kendo.Mvc.resources.dll",
@@ -4861,18 +4807,6 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.Dnx.Compilation.CSharp.Abstractions/1.0.0-rc2-20221": {
-      "sha512": "y93+g4QGIw0q1+I04BMuxqiDw2mjlwD4siw9yuSGX6aR/WriXTyeqe2xczSMmUKZbJJt87zSAcpi4EJ4awo5oQ==",
-      "type": "package",
-      "files": [
-        "Microsoft.Dnx.Compilation.CSharp.Abstractions.1.0.0-rc2-20221.nupkg.sha512",
-        "Microsoft.Dnx.Compilation.CSharp.Abstractions.nuspec",
-        "lib/dotnet5.4/Microsoft.Dnx.Compilation.CSharp.Abstractions.dll",
-        "lib/dotnet5.4/Microsoft.Dnx.Compilation.CSharp.Abstractions.xml",
-        "lib/net451/Microsoft.Dnx.Compilation.CSharp.Abstractions.dll",
-        "lib/net451/Microsoft.Dnx.Compilation.CSharp.Abstractions.xml"
-      ]
-    },
     "Microsoft.DotNet.Cli.Utils/1.0.0-preview1-002702": {
       "sha512": "/0HCuW5md8HOZ/QznFhjKIWqgDLB5cpFFGnhGByxo9exzWtH8+uGvyjtSJq/pGSVJWLtyjj9YXyohCZ20B9+VA==",
       "type": "package",
@@ -4979,18 +4913,6 @@
         "lib/net451/Microsoft.Extensions.CommandLineUtils.xml",
         "lib/netstandard1.3/Microsoft.Extensions.CommandLineUtils.dll",
         "lib/netstandard1.3/Microsoft.Extensions.CommandLineUtils.xml"
-      ]
-    },
-    "Microsoft.Extensions.CompilationAbstractions/1.0.0-rc2-20221": {
-      "sha512": "uWde2hUzzQpa+aMvrAjhQonHBK2tk1cO/y6FfK9dwiZYKpAH3UEBz81gWUvDgcj/xZ/mfqY2SNT5EyZ2RNXWxQ==",
-      "type": "package",
-      "files": [
-        "Microsoft.Extensions.CompilationAbstractions.1.0.0-rc2-20221.nupkg.sha512",
-        "Microsoft.Extensions.CompilationAbstractions.nuspec",
-        "lib/dotnet5.4/Microsoft.Extensions.CompilationAbstractions.dll",
-        "lib/dotnet5.4/Microsoft.Extensions.CompilationAbstractions.xml",
-        "lib/net451/Microsoft.Extensions.CompilationAbstractions.dll",
-        "lib/net451/Microsoft.Extensions.CompilationAbstractions.xml"
       ]
     },
     "Microsoft.Extensions.Configuration/1.0.0-rc2-final": {
@@ -5255,18 +5177,6 @@
         "lib/netcore50/Microsoft.Extensions.PlatformAbstractions.xml",
         "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll",
         "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.xml"
-      ]
-    },
-    "Microsoft.Extensions.PlatformAbstractions.Dnx/1.0.0-rc2-20221": {
-      "sha512": "gp886ddNVu/1ZIhgISqoTDDl6x3POHzX+ehnDdvqHUPIhJ0D2SNL78E7h1yEKlsglbJWkxyFYWZ2Wgh5CgYrBg==",
-      "type": "package",
-      "files": [
-        "Microsoft.Extensions.PlatformAbstractions.Dnx.1.0.0-rc2-20221.nupkg.sha512",
-        "Microsoft.Extensions.PlatformAbstractions.Dnx.nuspec",
-        "lib/dotnet5.4/Microsoft.Extensions.PlatformAbstractions.Dnx.dll",
-        "lib/dotnet5.4/Microsoft.Extensions.PlatformAbstractions.Dnx.xml",
-        "lib/net451/Microsoft.Extensions.PlatformAbstractions.Dnx.dll",
-        "lib/net451/Microsoft.Extensions.PlatformAbstractions.Dnx.xml"
       ]
     },
     "Microsoft.Extensions.Primitives/1.0.0-rc2-final": {
@@ -10575,7 +10485,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Kendo.Mvc >= 2016.2.607",
+      "Kendo.Mvc >= 2016.2.616",
       "Microsoft.AspNetCore.Mvc >= 1.0.0-rc2-final",
       "Microsoft.AspNetCore.Razor.Tools >= 1.0.0-preview1-final",
       "Microsoft.AspNetCore.Server.IISIntegration >= 1.0.0-rc2-final",

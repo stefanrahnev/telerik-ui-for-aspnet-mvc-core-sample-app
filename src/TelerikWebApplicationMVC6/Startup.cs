@@ -38,6 +38,8 @@ namespace TelerikWebApplicationMVC6
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.UseKendo(env);
         }
     }
 }
