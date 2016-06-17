@@ -1,8 +1,8 @@
-FROM microsoft/aspnet:1.0.0-rc1-final
+FROM microsoft/dotnet:1.0.0-preview1
 
 COPY . /app
 WORKDIR /app
-RUN ["dnu", "restore"]
+RUN ["dotnet", "restore"]
 
 EXPOSE 5004
-ENTRYPOINT ["dnx", "-p", "project.json", "kestrel"]
+ENTRYPOINT ["dotnet", "-p", "project.json", "kestrel"]
